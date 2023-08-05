@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    // @ts-nocheck
+    import reviews from "$lib/reviews.json";
+    let names = Object.keys(reviews);
+</script>
+
+{#each names as name}
+    <h1>{name}</h1>
+    {#each reviews[name] as review}
+        <li>{review}</li>
+    {/each}
+{/each}
