@@ -38,6 +38,9 @@
         text-align: center;
         text-transform: uppercase;
         font-style: italic;
+    
+        position: sticky;
+        left: 0;
     }
 
     @media only screen and (max-width: 1700px) {

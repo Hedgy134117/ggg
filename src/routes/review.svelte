@@ -55,6 +55,12 @@
 
         border-right: 1px solid black;
     }
+
+    .cell:first-of-type {
+        background-color: #ffe5b4;
+        left: 0;
+        position: sticky;
+    }
     
     .cell:last-of-type {
         border-right: 0;
