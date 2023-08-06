@@ -9,7 +9,7 @@
 {#each places as place, i}
     <div class="place">
         <h1>{place}</h1>
-        <Review name="NAME" data={["PRODUCT", "PRICE", "FLAVOR", "VALUE", "AMBIANCE", "COMMENTS"]} />
+        <Review name="NAME" bolded=true data={["PRODUCT", "PRICE", "FLAVOR", "VALUE", "AMBIANCE", "COMMENTS"]} />
         {#each names as name}
             <Review name={name} data={reviews[name][i]} />
         {/each}
@@ -20,7 +20,6 @@
     :global(body) {
         width: 60%;
         margin: 0 auto;
-        padding: 1em;
         background-color: #ffe5b4;
         font-family: 'Imprima', sans-serif;
     }
@@ -31,6 +30,7 @@
 
     .place {
         margin-bottom: 3em;
+        overflow: auto;
     }
 
     .place h1 {
@@ -38,5 +38,17 @@
         text-align: center;
         text-transform: uppercase;
         font-style: italic;
+    }
+
+    @media only screen and (max-width: 1700px) {
+        :global(body) {
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1300px) {
+        :global(body) {
+            width: 100%;
+        }
     }
 </style>

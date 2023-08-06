@@ -2,6 +2,7 @@
     // @ts-nocheck
     export let name;
     export let data;
+    export let bolded = false;
 
     let product = data[0];
     let price = data[1];
@@ -13,7 +14,7 @@
     let lastRow = name == "Westley" ? true : false;
 </script>
 
-<div class:bottom={lastRow} class="outer">
+<div class:bottom={lastRow} class:bolded={bolded} class="outer">
     <div class="cell">
         <p class="">{name}</p>
     </div>
@@ -61,5 +62,21 @@
 
     .bottom {
         border-bottom: 1px solid black;
+    }
+
+    .bolded {
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .outer {
+            grid-template-columns: 10% 15% 10% 10% 10% 10% 35%;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .outer {
+            width: 200%;
+        }
     }
 </style>
