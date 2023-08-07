@@ -2,10 +2,12 @@
     // @ts-nocheck
     import reviews from "$lib/reviews.json";
     import Review from './review.svelte';
+    import Header from './header.svelte';
     let names = Object.keys(reviews);
     let places = ["The Joint Coffee Co", "Bitty & Beau's Coffee", "Billy's Downtown Diner", "Hotel B Ice Cream Parlor", "Chocolate Lab"]
 </script>
 
+<Header />
 {#each places as place, i}
     <div class="place">
         <h1>{place}</h1>
@@ -34,13 +36,17 @@
     }
 
     .place h1 {
-        font-size: 4em;
+        font-size: 3em;
         text-align: center;
         text-transform: uppercase;
         font-style: italic;
     
         position: sticky;
         left: 0;
+    }
+
+    #header {
+        font-size: 4em;
     }
 
     @media only screen and (max-width: 1700px) {
