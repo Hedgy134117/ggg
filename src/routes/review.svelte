@@ -40,7 +40,7 @@
         <p class="">{product}</p>
     </div>
     <div class="cell">
-        <p class="">{price}</p>
+        <p class="">${price}</p>
     </div>
     <div class="cell star">
         <p class="">{@html calculateStars(flavor)}</p>
@@ -98,7 +98,7 @@
 
     @media only screen and (max-width: 800px) {
         .outer {
-            width: 200%;
+            width: 250%;
         }
     }
 </style>
