@@ -6,6 +6,8 @@
 
 <style>
     h1 {
+        text-align: left;
+        font-style: normal;
         margin: 0;
         font-size: 4em;
     }

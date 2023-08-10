@@ -5,11 +5,13 @@
     import Review from './review.svelte';
     import Header from './header.svelte';
 	import Result from "./result.svelte";
+	import Predictions from "./predictions.svelte";
     let names = Object.keys(reviews);
     let places = ["The Joint Coffee Co", "Bitty & Beau's Coffee", "Billy's Downtown Diner", "Hotel B Ice Cream Parlor", "Chocolate Lab"]
 </script>
 
 <Header />
+<Predictions />
 {#each places as place, i}
     <div class="place">
         <h1>{place}</h1>
@@ -35,17 +37,19 @@
         margin: 0;
     }
 
+    :global(h1) {
+        font-size: 3em;
+        text-align: center;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
     .place {
         margin-bottom: 3em;
         overflow: auto;
     }
 
-    .place h1 {
-        font-size: 3em;
-        text-align: center;
-        text-transform: uppercase;
-        font-style: italic;
-    
+    .place h1 {    
         position: sticky;
         left: 0;
     }
