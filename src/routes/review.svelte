@@ -13,7 +13,7 @@
     let ambiance = data[4];
     let comments = data[5];
 
-    let lastRow = name == "Westley" ? true : false;
+    let lastRow = name == "Yogi" ? true : false;
 </script>
 
 <div class:bottom={lastRow} class:bolded={bolded} class="outer">

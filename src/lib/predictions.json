@@ -1,7 +1,7 @@
 {
     "Who will spend the most money?": {
         "Graham": 7,
-        "Sam": 1,
+        "Sam": 2,
         "Yogi": 2
     },
     "Who will win the card championship?": {
@@ -9,7 +9,7 @@
         "Andrew": 2,
         "Graham": 1,
         "Phillip": 1,
-        "Yogi": 2,
+        "Yogi": 3,
         "Josh": 1
     },
     "Who would pass out at the sight of a 64oz. coffee?": {
@@ -18,12 +18,13 @@
         "Graham": 1,
         "Josh": 4,
         "Phillip": 1,
-        "Yogi": 1
+        "Yogi": 1,
+        "Payton": 1
     },
     "Who won't like anything they end up getting?": {
         "Andrew": 5,
         "Graham": 1,
-        "Josh": 1,
+        "Josh": 2,
         "Sanjay": 1,
         "Yogi": 1,
         "Ivy": 1
